@@ -294,10 +294,6 @@ on post-fs-data
 
     rm /data/local/tmp/adreno_config.txt
 
-    # communicate with mpdecision and thermald
-    mkdir /dev/socket/mpdecision 0770 system system
-    chmod 2770 /dev/socket/mpdecision
-
     # Enable Power modes and set the CPU Freq Sampling rates
     write /sys/module/rpm_resources/enable_low_power/L2_cache 1
     write /sys/module/rpm_resources/enable_low_power/pxo 1
