@@ -31,9 +31,6 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE  := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
-# Use legacy MMAP for pre-lollipop blobs
-BOARD_USES_LEGACY_MMAP := true
-
 # Needed for blobs
 TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
