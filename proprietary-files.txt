@@ -250,6 +250,7 @@ vendor/lib/libadreno_utils.so
 vendor/lib/libc2d2_a3xx.so
 vendor/lib/libc2d2_z180.so
 vendor/lib/libdiag.so
+vendor/lib/libdrmdecrypt.so
 vendor/lib/libgeofence.so
 vendor/lib/libgsl.so
 vendor/lib/libizat_core.so
@@ -268,3 +269,7 @@ vendor/lib/libquipc_ulp_adapter.so
 vendor/lib/libsc-a3xx.so
 -vendor/lib/libtime_genoff.so
 vendor/lib/libulp2.so
+vendor/lib/libwvdrm_L3.so
+vendor/lib/libwvm.so
+vendor/lib/libWVStreamControlAPI_L3.so
+vendor/lib/mediadrm/libwvdrmengine.so
