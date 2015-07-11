@@ -184,6 +184,10 @@ PRODUCT_PACKAGES += \
     mac-update \
     wcnss_service
 
+# Healthd
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
