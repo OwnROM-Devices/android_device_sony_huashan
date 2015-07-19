@@ -146,9 +146,6 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
-# Voice processing
-PRODUCT_PACKAGES += libqcomvoiceprocessing
-
 # FM radio
 PRODUCT_PACKAGES += \
     FM2 \
@@ -222,17 +219,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.handset.mic.type=digital \
-    persist.audio.dualmic.config=endfire \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.handset.mic=dmic \
     persist.audio.fluence.mode=endfire \
+    persist.audio.handset.mic=digital \
     persist.audio.lowlatency.rec=false \
+    af.resampler.quality=255 \
+    ro.qc.sdk.audio.fluencetype=fluence \
     qcom.hw.aac.encoder=true
-
-# Enable AAC 5.1 output
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.aac_51_output_enabled=true
 
 # QCOM Location
 PRODUCT_PROPERTY_OVERRIDES += \
